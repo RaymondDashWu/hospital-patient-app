@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <form method="POST" action="/messages/">
+            {{> message-form}}
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+            <input type="hidden" name="message_id" value="{{message_id}}">
+        </form>
+    </div>
+</div>

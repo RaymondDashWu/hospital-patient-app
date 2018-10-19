@@ -1,0 +1,13 @@
+<h1>Conversation with Staff</h1>
+<p>For any concerns, issues, or blabla</p>
+
+<a href = "/messages/new">New Message</a>
+
+<div class = "row">
+    {{#each messages}}
+        <div class = "col-sm-3">
+            <h2><a href="/messages/{{this.message_id}}">{{this.message_title}}</h2></a>
+            <small>{{this.message_content}}</small>
+        </div>
+    {{/each}}
+</div>
