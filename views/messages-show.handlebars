@@ -1,0 +1,24 @@
+<a href="/">Back to Home</a>
+<input id="message_id" type="hidden">
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        {{> message-form}}
+        <h1>{{message.message_title}}</h1>
+        <p>{{message.message_content}}</p>
+        <p><a href="/messages/edit?_id={{messages._id}}" onclick="event.preventDefault();editMessage(this);">Edit</a></p>
+        <p>
+            <form action="/messages?_id={{messages._id}}&_method=DELETE" id="deleteMessage" method="POST">
+                <button class="btn btn-primary" type="submit">Delete</button>
+            </form>
+        </p>
+
+
+
+        <hr>
+        <div id="messages">
+            {{#each message}}
+            {{> messages}}
+            {{/each}}
+        </div>
+    </div>
+</div>

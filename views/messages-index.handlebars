@@ -6,7 +6,7 @@
 <div class = "row">
     {{#each messages}}
         <div class = "col-sm-3">
-            <h2><a href="/messages/{{this.message_id}}">{{this.message_title}}</h2></a>
+            <h2><a href="/messages?_id={{this._id}}">{{this.message_title}}</h2></a>
             <small>{{this.message_content}}</small>
         </div>
     {{/each}}
