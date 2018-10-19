@@ -6,8 +6,9 @@
 <div class = "row">
     {{#each blogs}}
         <div class = "col-sm-3">
-            <h2><a href="/messages/{{this.blog_id}}">{{this.blog_title}}</h2></a>
+            <h2><a href="/blogs?_id={{this._id}}">{{this.blog_title}}</h2></a>
             <small>{{this.blog_content}}</small>
         </div>
     {{/each}}
 </div>
+

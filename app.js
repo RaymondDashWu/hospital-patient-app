@@ -10,6 +10,8 @@ const hospitals = require('./controllers/hospitals')
 const Hospital = require('./models/hospital_model')
 const messages = require('./controllers/messages')
 const Message = require('./models/message_model')
+const blogs = require('./controllers/blogs')
+const Blog = require('./models/blog_model')
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 
@@ -31,6 +33,7 @@ app.use(express.static('public'));
 // CONTROLLERS
 hospitals(app, Hospital);
 messages(app, Message);
+blogs(app, Blog);
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('App listening on port 3000!')

@@ -1,0 +1,24 @@
+<a href="/">Back to Home</a>
+<input id="blog_id" type="hidden">
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        {{> blog-form}}
+        <h1>{{blog.blog_title}}</h1>
+        <p>{{blog.blog_content}}</p>
+        <p><a href="/blogs/edit?_id={{blogs._id}}" onclick="event.preventDefault();editBlog(this);">Edit</a></p>
+        <p>
+            <form action="/blogs?_id={{blogs._id}}&_method=DELETE" id="deleteBlog" method="POST">
+                <button class="btn btn-primary" type="submit">Delete</button>
+            </form>
+        </p>
+
+
+
+        <hr>
+        <div id="blogs">
+            {{#each blog}}
+            {{> blogs}}
+            {{/each}}
+        </div>
+    </div>
+</div>
