@@ -1,9 +1,14 @@
 # Giving Hospital Goers Agency Over their Stay (WIP)
 
+This app is a current work in progress. At the time of writing it is a skeleton app with the bare features included.
+
+The purpose of this app was to give hospital goers agency over their stay. By allowing the hospital goer to easily communicate with staff they don't feel anxiety associated with the burden of their smaller requests. Thoughts like "Do I really need to bother the nurses with my request?" or "Did the nurse forget my request?". On top of that, a system like this keeps a record for staff to follow and allows them to triage patients. At a time when people are at a weak point in their life it's nice being able to summon help.
+
 App idea inspired from my blog post:
 https://medium.com/@RaymondDashWu/product-brainstorm-1-hospital-sterilization-automation-with-uvc-light-wip-5c16cf974f1f
 
-The original
+An online version of this can be found at:
+https://hospital-patient-app-rw.herokuapp.com/
 
 ## Getting Started
 
@@ -11,80 +16,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Node
+Node Package Manager (npm)
+MongoDB
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+$ npm install express --save
+$ npm install nodemon -g
+$ npm install express-handlebars --save
+$ npm install mongoose --save
+$ npm install bodyparser --save
+$ npm install method-override --save
