@@ -8,7 +8,7 @@ App idea inspired from my blog post:
 https://medium.com/@RaymondDashWu/product-brainstorm-1-hospital-sterilization-automation-with-uvc-light-wip-5c16cf974f1f
 
 An online version of this can be found at:
-INSERT HEROKU LINK***
+https://hospital-patient-app-rw.herokuapp.com/
 
 ## Getting Started
 
