@@ -1,13 +1,12 @@
-<h1>Conversation with Staff</h1>
-<p>For any concerns, issues, or blabla</p>
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>Conversation with Staff</h1>
+    <p>For any concerns, issues, or blabla</p>
 
-<a href = "/messages/new">New Message</a>
-
-<div class = "row">
+    <a href="/messages/new">New Message</a>
+<div class="row">
     {{#each messages}}
-        <div class = "col-sm-3">
-            <h2><a href="/messages?_id={{this._id}}">{{this.message_title}}</h2></a>
-            <small>{{this.message_content}}</small>
-        </div>
+        <h2><a href="/messages?_id={{this._id}}">{{this.message_title}}</h2></a>
+        <small>{{this.message_content}}</small>
     {{/each}}
+</div>
 </div>
